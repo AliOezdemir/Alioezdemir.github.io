@@ -24,12 +24,21 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #00f, #800080); /* Blue-Purple Gradient */
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Beautiful Purple-Blue Gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
 }
 
 /* Text Styling */
 h1 {
     color: white;
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
